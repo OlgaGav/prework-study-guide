@@ -38,7 +38,7 @@ function getRestaurantResults(searchValue, userPosition) {
     let searchUrl = restaurantBaseUrl+"&term="+searchValue+"&latitude="+lat+"&longitude="+lon;
 
     fetch(searchUrl, {
-        mode: 'no-cors',
+        // mode: 'no-cors',
         headers: {
             Authorization: bearer,
             'Access-Control-Allow-Credentials': true,
