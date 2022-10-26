@@ -29,8 +29,6 @@
 const restaurantBaseUrl = "https://api.yelp.com/v3/businesses/search?categories=restaurants&locale=en_US&radius=4000";
 const bearer = 'Bearer YXuzaCORAsgE_YQF8PMgLZRMg_UiY_7DfpnCEhGS3DOcGLNNrDAYk8BnEDAyj62rfOlD9Z5DSlGPFkc-lXFN-8zVtK3j65-x6mlxxc2ua3TnIWOEQvoRUqCelBVXY3Yx';
 
-
-YXuzaCORAsgE_YQF8PMgLZRMg_UiY_7DfpnCEhGS3DOcGLNNrDAYk8BnEDAyj62rfOlD9Z5DSlGPFkc-lXFN-8zVtK3j65-x6mlxxc2ua3TnIWOEQvoRUqCelBVXY3Yx
 getRestaurants("noodles");
 
 function getRestaurantResults(searchValue, userPosition) {
@@ -43,8 +41,8 @@ function getRestaurantResults(searchValue, userPosition) {
         // mode: 'no-cors',
         headers: {
             Authorization: bearer,
-            'Access-Control-Allow-Credentials': true,
-            'Access-Control-Allow-Origin': 'https://api.yelp.com'
+            // 'Access-Control-Allow-Credentials': true,
+            // 'Access-Control-Allow-Origin': 'https://api.yelp.com'
           }
     })
   .then(response => console.log(response))
