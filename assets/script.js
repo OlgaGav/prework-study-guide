@@ -41,8 +41,8 @@ function getRestaurantResults(searchValue, userPosition) {
         // mode: 'no-cors',
         headers: {
             Authorization: bearer,
-            // 'Access-Control-Allow-Credentials': true,
-            // 'Access-Control-Allow-Origin': 'https://api.yelp.com'
+            'Access-Control-Allow-Credentials': true,
+            'Access-Control-Allow-Origin': 'https://api.yelp.com'
           }
     })
   .then(response => console.log(response))
